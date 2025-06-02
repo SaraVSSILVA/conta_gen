@@ -1,0 +1,21 @@
+{
+  "name": "conta_gen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "@types/readline-sync": "^1.4.8",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
