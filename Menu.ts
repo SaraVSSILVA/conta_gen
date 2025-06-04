@@ -1,17 +1,28 @@
 import readlinesync = require("readline-sync");
 import { colors } from './src/util/Colors';
 import { Conta } from './src/util/model/Conta';
+import { ContaCorrente } from "./src/util/model/ContaCorrente";
+import { ContaPoupanca } from "./src/util/model/ContaPoupanca";
 
 export function main() {
 
     let opcao: number;
 
-    const conta: Conta = new Conta(555, 666, 5, "Sara", 10000);
-    conta.visualizar();
-    conta.sacar(10500);
-    conta.visualizar();
-    conta.depositar(5000);
-    conta.visualizar();
+    // Objeto da Classe ContaCorrente (Teste)
+    const contacorrente: ContaCorrente = new ContaCorrente(2, 123, 1, "Mariana", 15000, 1000);
+    contacorrente.visualizar();
+    contacorrente.sacar(2000);
+    contacorrente.visualizar();
+    contacorrente.depositar(1000);
+    contacorrente.visualizar();
+
+    //Objeto da Classe ContaPoupanca (Teste)
+    const contapoupanca: ContaPoupanca = new ContaPoupanca(3, 123, 2, "Victor", 1000, 10);
+    contapoupanca.visualizar();
+    contapoupanca.sacar(200);
+    contapoupanca.visualizar();
+    contapoupanca.depositar(1000);
+    contapoupanca.visualizar();
 
     while (true) {
 
@@ -110,9 +121,9 @@ export function main() {
 /* Função com os dados da pessoa desenvolvedora */
 function sobre(): void {
     console.log("\n*****************************************************");
-    console.log("Projeto Desenvolvido por: ");
-    console.log("Generation Brasil - generation@generation.org");
-    console.log("github.com/conteudoGeneration");
+    console.log("Projeto Desenvolvido por: Sara Silva");
+    console.log("Generation Brasil - saras@genstudents.org/saravitoriads@outlook.com");
+    console.log("github.com/conteudoGeneratiogit@github.com:SaraVSSILVA/conta_gen.git");
     console.log("*****************************************************");
 }
 
